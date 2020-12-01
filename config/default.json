@@ -1,0 +1,6 @@
+
+
+{
+    "mongoURI": "mongodb+srv://abdullateef68:abdullateef68@shorturl.rokvb.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "baseUrl": "http://localhost:5000"
+}
