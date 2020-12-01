@@ -2,5 +2,6 @@
 
 {
     "mongoURI": "mongodb+srv://abdullateef68:abdullateef68@shorturl.rokvb.mongodb.net/<dbname>?retryWrites=true&w=majority",
-    "baseUrl": "http://localhost:5000"
+    "baseUrl": "http://localhost:5000",
+    "herokuUrl": "https://url-shortner68.herokuapp.com"
 }

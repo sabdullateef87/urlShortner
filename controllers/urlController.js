@@ -1,11 +1,12 @@
 const validUrl = require("valid-url");
-const config = require("config");
 const shortid = require("shortid");
 const Url = require("../models/url");
 
 const urlController = async (req, res) => {
   const { longUrl } = req.body;
-  const baseUrl = config.get("baseUrl");
+
+  const baseUrl = "https://url-shortner68.herokuapp.com";
+
   if (!validUrl.isUri(baseUrl)) {
     return res.status(404).json({
       message: "Base Url Not Valid",

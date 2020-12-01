@@ -14,6 +14,7 @@ app.use(bodyParser.json());
 // connect the database
 connectDB();
 
+console.log(process.env.PROD_URL);
 app.use("/", indexUrl);
 app.use("/api/url", url);
 
