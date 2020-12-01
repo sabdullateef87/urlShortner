@@ -1,11 +1,12 @@
 const validUrl = require("valid-url");
+
 const shortid = require("shortid");
 const Url = require("../models/url");
 
 const urlController = async (req, res) => {
   const { longUrl } = req.body;
 
-  const baseUrl = "https://url-shortner68.herokuapp.com";
+  const baseUrl = process.env.PROD_URL || process.env.DEV_URL;
 
   if (!validUrl.isUri(baseUrl)) {
     return res.status(404).json({
