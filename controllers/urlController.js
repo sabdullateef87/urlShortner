@@ -5,6 +5,7 @@ const Url = require("../models/url");
 
 const urlController = async (req, res) => {
   const { longUrl } = req.body;
+  console.log(longUrl);
 
   const baseUrl = process.env.PROD_URL || process.env.DEV_URL;
 

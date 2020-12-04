@@ -2,8 +2,10 @@ const express = require("express"),
   app = express(),
   PORT = process.env.PORT || 5000;
 const connectDB = require("./config/db");
+const cors = require("cors");
 
 require("dotenv").config();
+app.use(cors());
 const bodyParser = require("body-parser");
 const url = require("./routes/url");
 const indexUrl = require("./routes/indexUrl");
